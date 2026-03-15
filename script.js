@@ -5,7 +5,7 @@ const downloadBtn = document.getElementById('download');
 const loader = document.getElementById('loader');
 
 const frameImage = new Image();
-frameImage.src = 'frame.png'; // <-- PUT YOUR PNG FRAME FILENAME HERE
+frameImage.src = 'frame.jpg'; // <-- PUT YOUR PNG FRAME FILENAME HERE
 
 uploadInput.addEventListener('change', async (e) => {
     const file = e.target.files[0];
