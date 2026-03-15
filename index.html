@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Frame Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Photo Framer</h1>
+        <p>Upload your photo to fit into the official event frame!</p>
+
+        <div class="upload-section">
+            <input type="file" id="upload" accept="image/*">
+            <label for="upload" class="btn-primary">Choose Your Photo</label>
+        </div>
+
+        <div class="preview-container">
+            <canvas id="canvas" width="1080" height="1080"></canvas>
+            <div id="loader" class="hidden">Processing... (Removing Background)</div>
+        </div>
+
+        <button id="download" class="btn-success" disabled>Download Framed Photo</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@imgly/background-removal@latest/dist/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
